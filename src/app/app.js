@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('frontend', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router'])
+angular.module('nestedStatesExample', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router'])
   .config(function ($stateProvider, $urlRouterProvider, CustomerStates) {
     $stateProvider
       .state('root', {

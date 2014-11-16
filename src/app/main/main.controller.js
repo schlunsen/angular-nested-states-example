@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('frontend');
+var app = angular.module('nestedStatesExample');
 app.controller('MainCtrl', function ($scope) {
   $scope.awesomeThings = [
     {

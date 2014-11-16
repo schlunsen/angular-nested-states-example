@@ -12,16 +12,29 @@
     width: 50px;
   }
 }
+
 a.active {
   font-weight: bold;
 
 }
 
 $subNavBarHeight: 50px;
-.subnavbar-navbar {
-  border: none;
 
+$class-slug: color-class !default;
+$mainColor: red;
+
+@for $i from 1 through 100 {
+
+  .#{$class-slug}-#{$i} {
+
+    background: lighten($mainColor, $i) !important;
+  }
 }
+
+.subnavbar-navbar {
+  border: none !important;
+}
+
 .subnavbar {
   border-bottom: 1px solid #c3c3c3;
   a {
@@ -53,18 +66,20 @@ $subNavBarHeight: 50px;
 .dropdown-animation {
   transition: 0.3s linear all;
 
-
 }
+
 .dropdown-animation.ng-enter, {
 
   height: 0px;
 
 }
+
 .dropdown-animation.ng-leave {
 
   height: $subNavBarHeight;
 
 }
+
 .dropdown-animation.ng-leave-active {
 
   height: 0px;
@@ -84,7 +99,7 @@ $subNavBarHeight: 50px;
   width: $size;
   height: $size;
   content: " ";
-  float:left;
+  float: left;
   width: 3%;
-  border: 0.2px solid lighten(black, 50%  );
+  border: 0.2px solid lighten(black, 50%);
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('frontend')
+angular.module('nestedStatesExample')
   .controller('NavbarCtrl', function ($scope, $state) {
     $scope.$state = $state;
   });

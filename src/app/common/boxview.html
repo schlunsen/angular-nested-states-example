@@ -1,10 +1,22 @@
-<button class="btn btn-default" ng-click="randomize()">Randomize</button>
-<button class="btn btn-default" ng-click="addBox()">Add</button>
 
-<h3>Box</h3>
+
+
 
   <div class="container">
+    <h3>Box</h3>
 
   </div>
-  <div ng-repeat="box in boxes track by $index" style="background: {{ box.color }}" class="box"></div>
-  <div class="clearfix"></div>
+  <div class="form-group col-md-3">
+    <label for="">Number of Boxes</label>
+    <input class="form-control" type="number" ng-model="numOfBoxes" ng-change="restart()"/>
+    <button class="btn btn-default" ng-click="randomize()">Randomize</button>
+    <button class="btn btn-default" ng-click="addBox()">Add</button>
+    <button class="btn btn-default" ng-click="clear()">clear</button>
+    <div class="clearfix"></div>
+
+  </div>
+  <div class="col-md-12">
+    <div ng-animate-children  ng-repeat="box in boxes track by $index"  class="box animate {{ box.colorClass}}"></div>
+    <div class="clearfix"></div>
+  </div>
+

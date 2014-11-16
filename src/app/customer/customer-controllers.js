@@ -1,2 +1,2 @@
-var app = angular.module('frontend');
+var app = angular.module('nestedStatesExample');
 
