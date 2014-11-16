@@ -1,0 +1,10 @@
+<button class="btn btn-default" ng-click="randomize()">Randomize</button>
+<button class="btn btn-default" ng-click="addBox()">Add</button>
+
+<h3>Box</h3>
+
+  <div class="container">
+
+  </div>
+  <div ng-repeat="box in boxes track by $index" style="background: {{ box.color }}" class="box"></div>
+  <div class="clearfix"></div>

@@ -1,0 +1,16 @@
+<h3>Customer account</h3>
+
+  <nav class="nav">
+    <ul class="list-unstyled list-inline">
+      <li>
+        <a ng-class="{active: $state.includes('root.customer.account.list')}" ui-sref="root.customer.account.list">List</a>
+      </li>
+      <li><a ng-class="{active: $state.includes('root.customer.account.detail')}" ui-sref="root.customer.account.detail">Detail</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="clearfix"></div>
+
+
+<div ng-animate-children class="animate" ui-view="customeraccountcontainer"></div>

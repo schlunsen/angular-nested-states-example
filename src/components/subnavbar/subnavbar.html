@@ -1,0 +1,28 @@
+<nav class="navbar subnavbar-navbar " ng-controller="SubNavbarCtrl">
+
+
+  <div ng-if="$state.includes('root.customer')" ng-animate-children class="dropdown-animation subnavbar">
+    <div class="navbar-header">
+
+        <a class="navbar-brand" ui-sref="root.main">
+        <span class="glyphicon glyphicon-home"></span> Subnavbar
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a ng-class="{active: $state.includes('root.customer.info')}" ui-sref="root.customer.info">Customer info</a>
+        </li>
+        <li>
+          <a ng-class="{active: $state.includes('root.customer.settings')}" ui-sref="root.customer.settings">Customer settings</a>
+        </li>
+        <li><a ng-class="{active: $state.includes('root.customer.account')}" ui-sref="root.customer.account.list">Account list</a></li>
+      </ul>
+    </div>
+
+
+
+
+  </div>
+
+</nav>
