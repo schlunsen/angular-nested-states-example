@@ -12,7 +12,7 @@ function handleError(err) {
 }
 
 gulp.task('styles', function () {
-  return gulp.src('src/{app,components}/**/*.scss')
+  return gulp.src('src/assets/**/*.scss')
     .pipe($.sass({style: 'expanded'}))
     .on('error', handleError)
     .pipe($.autoprefixer('last 1 version'))

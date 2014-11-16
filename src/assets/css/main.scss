@@ -21,13 +21,13 @@ a.active {
 $subNavBarHeight: 50px;
 
 $class-slug: color-class !default;
-$mainColor: red;
+$mainColor: blue;
 
 @for $i from 1 through 100 {
 
   .#{$class-slug}-#{$i} {
 
-    background: lighten($mainColor, $i) !important;
+    background: lighten($mainColor, $i / 1) !important;
   }
 }
 
